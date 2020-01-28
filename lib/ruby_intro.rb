@@ -4,6 +4,9 @@
 
 def sum arr
   # YOUR CODE HERE
+  total = 0
+  arr.each { |element| total += element}
+  return total 
 end
 
 def max_2_sum arr
