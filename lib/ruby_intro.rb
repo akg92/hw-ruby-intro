@@ -11,6 +11,16 @@ end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  max = 0
+  ## empty array
+  return 0 if arr.empty? 
+  ## array with only one element
+  return arr[0] if arr.length === 1
+
+  ## sort and return sum
+  arr.sort! 
+  ## using negative index
+  arr[-1] + arr[-2] 
 end
 
 def sum_to_n? arr, n
