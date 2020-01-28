@@ -43,7 +43,7 @@ def sum_to_n? arr, n
       star_index += 1
     end
   end
-  
+
   ## final
   return false
 
@@ -53,6 +53,7 @@ end
 
 def hello(name)
   # YOUR CODE HERE
+  "Hello, #{name}"
 end
 
 def starts_with_consonant? s
