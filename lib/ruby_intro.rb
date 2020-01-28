@@ -63,6 +63,8 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  ## first part is validity check and second part is division check.
+  s !~ /[^01]/ and s =~ /(^0?0$)|(.*00$)/ 
 end
 
 # Part 3
