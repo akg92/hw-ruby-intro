@@ -58,6 +58,7 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
+  s =~ /^[a-z]/i and s !~ /^[AEIOU]/i 
 end
 
 def binary_multiple_of_4? s
