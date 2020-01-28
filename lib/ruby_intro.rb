@@ -25,6 +25,28 @@ end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  ## base condition check
+  return false if arr.length < 2
+
+  ## sort for the linear search
+  arr.sort!
+  start_index , end_index = 0, arr.length - 1
+
+  until  star_index < end_index do
+    total = arr[star_index] + arr[end_index]
+    ## return if equal
+    return true if total === n
+    ## increment based on condition
+    if total > n 
+       end_index -= 1 
+    else
+      star_index += 1
+    end
+  end
+  
+  ## final
+  return false
+
 end
 
 # Part 2
